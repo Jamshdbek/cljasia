@@ -1,0 +1,78 @@
+{
+    "name": "myuhl",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@reduxjs/toolkit": "^1.9.1",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "add": "^2.0.6",
+        "axios": "^1.2.2",
+        "exceljs": "^4.3.0",
+        "file-saver": "^2.0.5",
+        "formik": "^2.2.9",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.4",
+        "node-sass": "^9.0.0",
+        "rc-checkbox": "^2.3.2",
+        "react": "^18.2.0",
+        "react-barcode": "^1.4.6",
+        "react-csv": "^2.2.2",
+        "react-datepicker": "^4.8.0",
+        "react-dom": "^18.2.0",
+        "react-export-table-to-excel": "^1.0.6",
+        "react-grid-system": "^8.1.6",
+        "react-html-table-to-excel": "^2.0.0",
+        "react-modal": "^3.16.1",
+        "react-number-format": "^5.1.2",
+        "react-paginate": "^8.1.4",
+        "react-phone-input-2": "^2.15.1",
+        "react-qr-code": "^2.0.11",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^5.3.0",
+        "react-scripts": "5.0.1",
+        "react-select": "^5.7.0",
+        "react-spinners": "^0.13.7",
+        "react-svg": "^16.1.0",
+        "react-tabs": "^6.0.0",
+        "react-to-print": "^2.14.11",
+        "react-toastify": "^9.1.1",
+        "recharts": "^2.3.2",
+        "redux-persist": "^6.0.0",
+        "sheetjs-style": "^0.15.8",
+        "styled-components": "^5.3.6",
+        "uuid": "^9.0.0",
+        "web-vitals": "^2.1.0",
+        "xlsx": "^0.18.5",
+        "xlsx-style": "^0.8.13",
+        "yarn": "^1.22.19",
+        "yup": "^0.32.11",
+        "zipcelx": "^1.6.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "git push": "https://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@github.com/universalhanaro/myuhl-admin.git/"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
