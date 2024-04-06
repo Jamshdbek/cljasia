@@ -9,6 +9,7 @@
         "@testing-library/user-event": "^13.2.1",
         "add": "^2.0.6",
         "axios": "^1.2.2",
+        "caniuse-lite": "^1.0.30001606",
         "exceljs": "^4.3.0",
         "file-saver": "^2.0.5",
         "formik": "^2.2.9",
