@@ -20,6 +20,7 @@ import {
   BaseCheckbox,
   Loader,
   FormWrapper,
+  NoData,
 } from "components";
 import image1 from "../../../assets/images/picture/Check_fill.png";
 import image2 from "../../../assets/images/picture/Check_ring_light@3x.png";
@@ -48,7 +49,7 @@ import { fetchAllDealersPrices } from "app/slices/dealerSlices/dealersPriceSlice
 import dealerSchema from "app/createSelector/dealerSchema";
 import "moment/locale/ru";
 import { fetchCountries } from "app/slices/commonSlices/countriesSlice";
-
+import nodata_icon from "assets/images/picture/no-data.png";
 const MyUHLParcelsContainer = () => {
   const history = useHistory();
   const dispatch = useDispatch();
@@ -885,7 +886,9 @@ const MyUHLParcelsContainer = () => {
                         ))
                       ) : (
                         <tr>
-                          <td colSpan={16}>No data</td>
+                          <td colSpan={16}>
+                            <NoData />
+                          </td>
                         </tr>
                       )}
                     </BaseTable>

@@ -14,9 +14,14 @@ import {
   BaseInput,
   BasePagination,
   Loader,
+  NoData,
 } from "components";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllInspections , handleClearFilter,handleChangeFilter } from "app/slices/myuhlSlices/inspectionAllSlice/inspectionAllSlice";
+import {
+  fetchAllInspections,
+  handleClearFilter,
+  handleChangeFilter,
+} from "app/slices/myuhlSlices/inspectionAllSlice/inspectionAllSlice";
 import { useEffect } from "react";
 import { NumericFormat } from "react-number-format";
 import moment from "moment";
@@ -45,15 +50,11 @@ const MyUHLInspectionsContainer = () => {
   const isFetched = useSelector((store) =>
     get(store, "myuhl.inspectionAllSlice.data.inspectionsAll.success", false)
   );
- const filter = useSelector((store) => 
-   store.myuhl.inspectionAllSlice.filter
- )
+  const filter = useSelector((store) => store.myuhl.inspectionAllSlice.filter);
   const totalPages = get(paginationData, "totalPages", null);
   const pageSize = get(paginationData, "pageSize", null);
   const pageNumber = get(paginationData, "currentPageNumber", null);
   const [isDelete, setIsDelete] = useState(false);
-
-
 
   const [collapsedRowId, setCollapsedRowId] = useState(null);
 
@@ -79,7 +80,7 @@ const MyUHLInspectionsContainer = () => {
       })
     );
 
-    dispatch(handleClearFilter())
+    dispatch(handleClearFilter());
     setClear("");
   };
 
@@ -136,11 +137,12 @@ const MyUHLInspectionsContainer = () => {
               <Col xs={0.5}></Col>
               <Col xs={3}>
                 <BaseInput
-                  value={get(filter,'search','')}
-
+                  value={get(filter, "search", "")}
                   handleInput={(val) => {
                     setClear(val);
-                    dispatch(handleChangeFilter({name:'search',value:val}))
+                    dispatch(
+                      handleChangeFilter({ name: "search", value: val })
+                    );
                   }}
                   width="100%"
                   placeholder={"Поиск по коду, или ФИО"}
@@ -172,7 +174,7 @@ const MyUHLInspectionsContainer = () => {
                       "Цена",
                     ]}
                   >
-                    {!isEmpty(inspectionsAllData) ? (
+                    {!isEmpty(inspectionsAllData.data) ? (
                       inspectionsAllData.data.map((item, index) => (
                         <>
                           <tr
@@ -341,7 +343,9 @@ const MyUHLInspectionsContainer = () => {
                       ))
                     ) : (
                       <tr>
-                        <td colSpan={10}>No data</td>
+                        <td colSpan={12}>
+                          <NoData />
+                        </td>
                       </tr>
                     )}
                   </BaseTable>
@@ -359,8 +363,10 @@ const MyUHLInspectionsContainer = () => {
                     <Text>Show</Text>
                     <BaseSelect
                       // disabled
-                      handleChange={( value ) => {
-                        dispatch(handleChangeFilter({name:'size',value:value}))
+                      handleChange={(value) => {
+                        dispatch(
+                          handleChangeFilter({ name: "size", value: value })
+                        );
                       }}
                       options={[
                         { value: 5, label: 5 },
@@ -381,9 +387,14 @@ const MyUHLInspectionsContainer = () => {
                 <Col xs={8}>
                   <BasePagination
                     current={pageNumber}
-                    value={get(filter,'page',10)}
+                    value={get(filter, "page", 10)}
                     onChange={({ selected }) => {
-                      dispatch(handleChangeFilter({name:'page',value:selected+1}))
+                      dispatch(
+                        handleChangeFilter({
+                          name: "page",
+                          value: selected + 1,
+                        })
+                      );
                     }}
                     pageCount={totalPages}
                   />

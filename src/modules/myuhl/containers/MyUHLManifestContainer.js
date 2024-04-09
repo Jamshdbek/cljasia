@@ -14,6 +14,7 @@ import {
     BaseTextarea,
     Flex,
     BaseCheckbox,
+    NoData,
 } from "components";
 import { useDispatch, useSelector } from "react-redux";
 import manifestAllSlice, {
@@ -820,7 +821,7 @@ const MyUHLManifestContainer = () => {
                                             )
                                         ) : (
                                             <tr>
-                                                <td colSpan={16}>No data</td>
+                                                <td colSpan={16}><NoData/></td>
                                             </tr>
                                         )}
                                         {!isEmpty(manifestsAllData) ? (

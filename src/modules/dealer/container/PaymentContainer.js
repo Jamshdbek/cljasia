@@ -729,7 +729,7 @@ const PaymentContainer = () => {
                           ))
                         ) : (
                           <tr>
-                            <td colSpan={10}>No data</td>
+                            <td colSpan={10}>нет данных</td>
                           </tr>
                         )}
                       </BaseTable>

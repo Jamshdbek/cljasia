@@ -42,4 +42,5 @@ export { default as PhoneDropDown } from "./phoneDropDown";
 export { default as BaseCheckbox } from "./checkbox";
 export { default as BaseMaskInput } from "./base-mask-nput";
 export { default as BasePhoneInput } from "./base-phone-input";
-export {default as BaseTabs} from "./base-tabs"
+export { default as BaseTabs } from "./base-tabs";
+export { default as NoData } from "./nodata";
