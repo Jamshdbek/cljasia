@@ -13,20 +13,7 @@ const ExcelExport = ({
     isCheckedParcels,
     ...props
 }) => {
-    // const fileType =
-    //     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8";
-    // const fileExtension = ".xlsx";
     const { columns, rows } = excelData;
-
-    //     order
-    // invoiceNumber
-    // receiverName
-    // pinfl
-    // passportNumber
-    // grossWeight
-    // totalPrice
-    // items
-
     const exportTOExcel = async () => {
         const workbook = new ExcelJS.Workbook();
         const sheet = workbook.addWorksheet(fileName);

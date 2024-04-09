@@ -237,7 +237,7 @@ const CustomsDeclarationTable = ({ data, companyData }) => {
                         <NumericFormat
                             displayType="text"
                             value={get(data, "price", 0)}
-                            prefix={"₩ "}
+                            prefix={"¥ "}
                             thousandSeparator={true}
                             decimalScale={0}
                             fixedDecimalScale={true}

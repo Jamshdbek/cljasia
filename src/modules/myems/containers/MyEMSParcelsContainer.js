@@ -127,7 +127,7 @@ const MyEMSParcelsContainer = () => {
         (store) => store.myems.myemsAllPostsSlice.filter
     );
     useEffect(() => {
-        document.title = "Почта (MyEMS)";
+        document.title = "Почта ";
     }, []);
     useEffect(() => {
 
@@ -259,7 +259,7 @@ const MyEMSParcelsContainer = () => {
                             items={[
                                 {
                                     id: 1,
-                                    name: "Почта (MyEMS)",
+                                    name: "Почта ",
                                     url: "/myems/parcels",
                                 },
                             ]}

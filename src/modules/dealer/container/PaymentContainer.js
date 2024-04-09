@@ -431,7 +431,7 @@ const PaymentContainer = () => {
                               <NumericFormat
                                 displayType="text"
                                 value={sumOfReturnAndDeposit}
-                                prefix={"₩ "}
+                                prefix={"¥ "}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -442,7 +442,7 @@ const PaymentContainer = () => {
                               <NumericFormat
                                 displayType="text"
                                 value={sumOfDeliveryAndAdditional}
-                                prefix={"₩ "}
+                                prefix={"¥ "}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -456,7 +456,7 @@ const PaymentContainer = () => {
                                   sumOfDeliveryAndAdditional -
                                   sumOfReturnAndDeposit
                                 }
-                                prefix={"₩ "}
+                                prefix={"¥ "}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -512,7 +512,7 @@ const PaymentContainer = () => {
                                         }}
                                         displayType="text"
                                         value={get(item, "amount", "-")}
-                                        prefix={"₩"}
+                                        prefix={"¥"}
                                         thousandSeparator={true}
                                         decimalScale={2}
                                         fixedDecimalScale={true}
@@ -535,7 +535,7 @@ const PaymentContainer = () => {
                                         style={{
                                           textDecoration: "underline",
                                         }}
-                                        prefix={"₩"}
+                                        prefix={"¥"}
                                         thousandSeparator={true}
                                         decimalScale={2}
                                         fixedDecimalScale={true}
@@ -566,7 +566,7 @@ const PaymentContainer = () => {
                                         }}
                                         displayType="text"
                                         value={get(item, "amount", "-")}
-                                        prefix={"₩"}
+                                        prefix={"¥"}
                                         thousandSeparator={true}
                                         decimalScale={2}
                                         fixedDecimalScale={true}
@@ -589,7 +589,7 @@ const PaymentContainer = () => {
                                         style={{
                                           textDecoration: "underline",
                                         }}
-                                        prefix={"₩"}
+                                        prefix={"¥"}
                                         thousandSeparator={true}
                                         decimalScale={2}
                                         fixedDecimalScale={true}
@@ -603,7 +603,7 @@ const PaymentContainer = () => {
                                   <NumericFormat
                                     displayType="text"
                                     value={get(item, "remainedAmount", "-")}
-                                    prefix={"₩"}
+                                    prefix={"¥"}
                                     thousandSeparator={true}
                                     decimalScale={2}
                                     fixedDecimalScale={true}
@@ -622,7 +622,7 @@ const PaymentContainer = () => {
                                         "Вес (грамм)",
                                         "Количество",
                                         "Цена",
-                                        "MyUHL цена",
+                                        "CLJASIA цена",
                                       ]}
                                     >
                                       {get(item, "accountingDetails", []) &&
@@ -648,7 +648,7 @@ const PaymentContainer = () => {
                                                       .then(({ data }) => {
                                                         if (data.success) {
                                                           history.push(
-                                                            `/myuhl/parcels/single/${get(
+                                                            `/email/parcels/single/${get(
                                                               parcel,
                                                               "postId",
                                                               null
@@ -703,7 +703,7 @@ const PaymentContainer = () => {
                                                     "price",
                                                     "-"
                                                   )}
-                                                  prefix={"₩"}
+                                                  prefix={"¥"}
                                                   thousandSeparator={true}
                                                   decimalScale={2}
                                                   fixedDecimalScale={true}
@@ -717,7 +717,7 @@ const PaymentContainer = () => {
                                                     "basePrice",
                                                     "-"
                                                   )}
-                                                  prefix={"₩"}
+                                                  prefix={"¥"}
                                                   thousandSeparator={true}
                                                   decimalScale={0}
                                                   fixedDecimalScale={true}

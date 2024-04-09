@@ -54,13 +54,13 @@ const TaxContainer = () => {
                             items={[
                                 {
                                     id: 1,
-                                    name: "Почта (MyUHL)",
-                                    url: "/myuhl/parcels",
+                                    name: "Почта ",
+                                    url: "/email/parcels",
                                 },
                                 {
                                     id: 2,
                                     name: "Налог",
-                                    url: "/myuhl/parcels/tax",
+                                    url: "/email/parcels/tax",
                                 },
                             ]}
                         />

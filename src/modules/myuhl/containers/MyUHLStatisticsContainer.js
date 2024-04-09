@@ -123,7 +123,7 @@ const MyUHLStatisticsContainer = () => {
                             {
                                 id: 1,
                                 name: "Статистика",
-                                url: "/myuhl/statistics",
+                                url: "/email/statistics",
                             },
                         ]}
                     />
@@ -233,7 +233,7 @@ const MyUHLStatisticsContainer = () => {
                                         }}
                                     />
                                     <Col>
-                                        <Link to={"/myuhl/manifest/oneprint"}>
+                                        <Link to={"/email/manifest/oneprint"}>
                                             <BaseButton
                                                 bordered
                                                 disabled={

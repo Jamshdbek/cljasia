@@ -13,11 +13,8 @@ class LayoutManager extends Component {
         if (pathname === "/") {
             return "home";
         }
-        if (/^\/myuhl(?=\/|$)/i.test(pathname)) {
-            return "myuhl";
-        }
-        if (/^\/myems(?=\/|$)/i.test(pathname)) {
-            return "myems";
+        if (/^\/email(?=\/|$)/i.test(pathname)) {
+            return "email";
         }
         if (/^\/management(?=\/|$)/i.test(pathname)) {
             return "management";
@@ -38,7 +35,7 @@ class LayoutManager extends Component {
     getLayouts = () => {
         return {
             home: HomeInnerLayout,
-            myuhl: MyUhlInnerLayout,
+            email: MyUhlInnerLayout,
             myems:MyemsInnerLayout,
             management: ManagementInnerLayout,
             service: ServiceInnerLayout,

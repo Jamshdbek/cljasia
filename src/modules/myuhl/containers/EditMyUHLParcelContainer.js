@@ -220,13 +220,13 @@ const EditMyUHLParcelContainer = () => {
                         items={[
                             {
                                 id: 1,
-                                name: "Почта (MyUHL)",
-                                url: "/myuhl/parcels",
+                                name: "Почта ",
+                                url: "/email/parcels",
                             },
                             {
                                 id: 2,
                                 name: "Редактировать",
-                                url: "/myuhl/parcels/edit",
+                                url: "/email/parcels/edit",
                             },
                         ]}
                     />

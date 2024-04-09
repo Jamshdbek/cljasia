@@ -28,7 +28,7 @@ const MyemsInnerLayout = ({ children }) => {
                                                 "/myems/parcels",
                                             ]}
                                         >
-                                            Почта (MyEMS)
+                                            Почта 
                                         </MenuItem>
                                     )}
                                 </Flex>

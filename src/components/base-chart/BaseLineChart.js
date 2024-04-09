@@ -92,7 +92,7 @@ const BaseLineChart = ({
                             value={round(payload[0].value, 2)}
                             decimalScale={0}
                             fixedDecimalScale={true}
-                            prefix={"₩"}
+                            prefix={"¥"}
                         />
                     </Text>
                 </StyledCustomTooltip>

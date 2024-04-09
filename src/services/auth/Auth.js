@@ -5,14 +5,6 @@ import { hasAccess } from "utils";
 
 const Auth = ({ children }) => {
     const userData = useSelector((store) => store.auth.user);
-    // checkAuth(); for user me
-    // useSelect() => auth state
-    // const isAuthenticated = null;
-    // const isFetched = null;
-    // const user = null;
-    // const departments = null;
-    // const pages = null;
-
     return (
         <Provider
             value={{
@@ -104,25 +96,5 @@ const Auth = ({ children }) => {
         </Provider>
     );
 };
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         checkAuth: () =>
-//             dispatch({
-//                 type: Actions.CHECK_AUTH.REQUEST,
-//             }),
-//     };
-// };
-
-// const mapStateToProps = (state) => {
-//     return {
-//         isAuthenticated: get(state, "auth.isAuthenticated", false),
-//         isFetched: get(state, "auth.isFetched", false),
-//         user: get(state, "auth.user", {}),
-//         departments: get(state, "auth.user.departments", []),
-//         pages: get(state, "auth.user.pages", []),
-//         permissions: get(state, "auth.user.permissions", []),
-//     };
-// };
 
 export default Auth;

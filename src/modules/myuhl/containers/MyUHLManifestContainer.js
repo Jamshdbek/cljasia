@@ -78,7 +78,7 @@ const MyUHLManifestContainer = () => {
     );
 
     useEffect(() => {
-        if (lastLocation != "/myuhl/manifest/print") {
+        if (lastLocation != "/email/manifest/print") {
             dispatch(fetchAllManifests());
         }
         document.title = "Манифест";
@@ -434,7 +434,7 @@ const MyUHLManifestContainer = () => {
                             {
                                 id: 1,
                                 name: "Манифест",
-                                url: "/myuhl/manifest",
+                                url: "/email/manifest",
                             },
                         ]}
                     />
@@ -786,7 +786,7 @@ const MyUHLManifestContainer = () => {
                                                                     "price",
                                                                     ""
                                                                 )}
-                                                                prefix={"₩ "}
+                                                                prefix={"¥ "}
                                                                 thousandSeparator={
                                                                     true
                                                                 }
@@ -885,7 +885,7 @@ const MyUHLManifestContainer = () => {
 
                                                     <Link
                                                         to={
-                                                            "/myuhl/manifest/print"
+                                                            "/email/manifest/print"
                                                         }
                                                     >
                                                         <BaseButton

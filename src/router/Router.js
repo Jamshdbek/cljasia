@@ -80,7 +80,7 @@ const Router = () => {
                     <IsAuth>
                         <InnerLayoutManager>
                             <HasAccess>
-                                {({ userCan, pages, permissions }) => (
+                                {({ userCan, pages }) => (
                                     <Switch>
                                         <Route
                                             path={"/"}
@@ -95,7 +95,7 @@ const Router = () => {
                                         />
                                         {/* MyUHL pages */}
                                         <Route
-                                            path={["/myuhl", "/myuhl/parcels"]}
+                                            path={["/email", "/email/parcels"]}
                                             exact
                                             render={() =>
                                                 userCan(
@@ -110,8 +110,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/parcels/add",
+                                                "/email",
+                                                "/email/parcels/add",
                                             ]}
                                             exact
                                             render={() =>
@@ -127,8 +127,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/parcels/edit/:id",
+                                                "/email",
+                                                "/email/parcels/edit/:id",
                                             ]}
                                             exact
                                             render={() =>
@@ -145,8 +145,8 @@ const Router = () => {
 
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/parcels/single/:id",
+                                                "/email",
+                                                "/email/parcels/single/:id",
                                             ]}
                                             exact
                                             render={() =>
@@ -162,8 +162,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/parcels/clientcheck/:id",
+                                                "/email",
+                                                "/email/parcels/clientcheck/:id",
                                             ]}
                                             exact
                                             render={() =>
@@ -179,8 +179,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/parcels/tax/:id",
+                                                "/email",
+                                                "/email/parcels/tax/:id",
                                             ]}
                                             exact
                                             render={() =>
@@ -195,7 +195,7 @@ const Router = () => {
                                             }
                                         />
                                         <Route
-                                            path={["/myuhl", "/myuhl/users"]}
+                                            path={["/email", "/email/users"]}
                                             exact
                                             render={() =>
                                                 userCan(
@@ -210,8 +210,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/statistics",
+                                                "/email",
+                                                "/email/statistics",
                                             ]}
                                             exact
                                             render={() =>
@@ -227,8 +227,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/inspections",
+                                                "/email",
+                                                "/email/inspections",
                                             ]}
                                             exact
                                             render={() =>
@@ -243,7 +243,7 @@ const Router = () => {
                                             }
                                         />
                                         <Route
-                                            path={["/myuhl", "/myuhl/manifest"]}
+                                            path={["/email", "/email/manifest"]}
                                             exact
                                             render={() =>
                                                 userCan(
@@ -258,8 +258,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/manifest/print",
+                                                "/email",
+                                                "/email/manifest/print",
                                             ]}
                                             exact
                                             render={() =>
@@ -275,8 +275,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myuhl",
-                                                "/myuhl/manifest/oneprint",
+                                                "/email",
+                                                "/email/manifest/oneprint",
                                             ]}
                                             exact
                                             render={() =>
@@ -291,8 +291,8 @@ const Router = () => {
                                             }
                                         />
                                         <Route path={[
-                                            '/myuhl',
-                                            '/myuhl/parcels/invoice',]}
+                                            '/email',
+                                            '/email/parcels/invoice',]}
                                             exact
                                             render={() => userCan(pages, "MYUHL_INVOICE_PARCEL") ? (
                                                 <PrentMyUHLInvoicePage />
@@ -318,8 +318,8 @@ const Router = () => {
                                         />
                                         <Route
                                             path={[
-                                                "/myems",
-                                                "/myems/parcels/edit/:id",
+                                                "/email",
+                                                "/email/parcels/edit/:id",
                                             ]}
                                             exact
                                             render={() =>

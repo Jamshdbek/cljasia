@@ -218,7 +218,7 @@ const CheckTableComponent = ({
                             fontWeight: 'bold',
                             float: 'right',
                             color: '#585757'
-                        }}  >{get(data, 'price', '')}{" ₩ "}</span>
+                        }}  >{get(data, 'price', '')}{" ¥ "}</span>
 
                     </td>
                 </tr>

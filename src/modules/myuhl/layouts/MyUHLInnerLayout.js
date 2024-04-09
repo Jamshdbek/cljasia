@@ -22,20 +22,20 @@ const MyUhlInnerLayout = ({ children }) => {
                                     {userCan(pages, "MYUHL_PARCELS") && (
                                         <MenuItem
                                             icon={postbox}
-                                            url={"/myuhl/parcels"}
+                                            url={"/email/parcels"}
                                             activeUrls={[
-                                                "/myuhl",
-                                                "/myuhl/parcels",
+                                                "/email",
+                                                "/email/parcels",
                                             ]}
                                         >
-                                            Почта (MyUHL)
+                                            Почта 
                                         </MenuItem>
                                     )}
                                     {isAdmin && (
                                         <MenuItem
                                         stoke={true}
                                             icon={usersIcon}
-                                            url={"/myuhl/users"}
+                                            url={"/email/users"}
                                         >
                                             Пользователи
                                         </MenuItem>
@@ -43,7 +43,7 @@ const MyUhlInnerLayout = ({ children }) => {
                                     {isAdmin && (
                                         <MenuItem
                                             icon={statistics}
-                                            url={"/myuhl/statistics"}
+                                            url={"/email/statistics"}
                                         >
                                             Статистика
                                         </MenuItem>
@@ -51,7 +51,7 @@ const MyUhlInnerLayout = ({ children }) => {
                                     {isAdmin && (
                                         <MenuItem
                                             icon={userEdit}
-                                            url={"/myuhl/inspections"}
+                                            url={"/email/inspections"}
                                         >
                                             Инспекция
                                         </MenuItem>
@@ -59,7 +59,7 @@ const MyUhlInnerLayout = ({ children }) => {
                                     {isAdmin && (
                                         <MenuItem
                                             icon={paper}
-                                            url={"/myuhl/manifest"}
+                                            url={"/email/manifest"}
                                         >
                                             Манифест
                                         </MenuItem>

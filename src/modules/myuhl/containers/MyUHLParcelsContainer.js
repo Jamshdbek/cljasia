@@ -253,10 +253,6 @@ const MyUHLParcelsContainer = () => {
   const allPostsData = useSelector((store) =>
     get(store, "myuhl.myuhlAllPostsSlice.data.myuhlAllPosts", [])
   );
-  // <<<<<<< HEAD
-  // =======
-  //     const checkedPostData = allPostsData.filter((item) => item.checked);
-  // >>>>>>> f4402a726acf0a90de035fea7596a0bf539f0b69
   const paginationData = useSelector((store) =>
     get(store, "myuhl.myuhlAllPostsSlice.data.pagination", [])
   );
@@ -303,7 +299,7 @@ const MyUHLParcelsContainer = () => {
     if (!get(userMe, "hasPrice")) {
       toast.warning("Super admin should add country prices for you");
     } else {
-      history.push("/myuhl/parcels/add");
+      history.push("/email/parcels/add");
     }
   };
   useEffect(() => {
@@ -315,7 +311,7 @@ const MyUHLParcelsContainer = () => {
   }, [locationToChange]);
 
   useEffect(() => {
-    document.title = "Почта (MyUHL)";
+    document.title = "Почта ";
   }, []);
 
   const removePost = (id) => {
@@ -377,8 +373,8 @@ const MyUHLParcelsContainer = () => {
               items={[
                 {
                   id: 1,
-                  name: "Почта (MyUHL)",
-                  url: "/myuhl/parcels",
+                  name: "Почта ",
+                  url: "/email/parcels",
                 },
               ]}
             />
@@ -443,7 +439,7 @@ const MyUHLParcelsContainer = () => {
                             className={"mr-8"}
                             disabled={!isCheckedParcels}
                             onClick={() => {
-                              history.push("/myuhl/parcels/invoice");
+                              history.push("/email/parcels/invoice");
                             }}
                             primary
                           >
@@ -670,7 +666,7 @@ const MyUHLParcelsContainer = () => {
                         "Страна",
                         "Вес (грамм)",
                         "Цена",
-                        "MyUHL Цена",
+                        "CLJASIA Цена ",
                         "Местоположение",
                         "Статус",
                         "Печать",
@@ -688,21 +684,7 @@ const MyUHLParcelsContainer = () => {
                                 checked={get(item, "checked", false)}
                                 handleChange={() => {
                                   setActive(false);
-
-                                  // dispatch(
-                                  //     handleChangeCheckbox(
-                                  //         get(
-                                  //             item,
-                                  //             "id",
-                                  //             ""
-                                  //         )
-                                  //     )
-                                  // );
-                                  // if (
-                                  //     hotKeyPressed
-                                  // ) {
                                   handleSetFirstCheck(index);
-                                  // }
                                   dispatch(
                                     handleCheckParcel({
                                       index,
@@ -743,7 +725,7 @@ const MyUHLParcelsContainer = () => {
                             <td>{dateFormat(get(item, "createdAt", "-"))}</td>
                             <td>
                               <Link
-                                to={`/myuhl/parcels/single/${get(
+                                to={`/email/parcels/single/${get(
                                   item,
                                   "id",
                                   null
@@ -767,7 +749,7 @@ const MyUHLParcelsContainer = () => {
                               <NumericFormat
                                 displayType="text"
                                 value={get(item, "price", "")}
-                                prefix={"₩"}
+                                prefix={"¥"}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -777,7 +759,7 @@ const MyUHLParcelsContainer = () => {
                               <NumericFormat
                                 displayType="text"
                                 value={get(item, "basePrice", "")}
-                                prefix={"₩"}
+                                prefix={"¥"}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -811,7 +793,7 @@ const MyUHLParcelsContainer = () => {
                             </td>
                             <td>
                               <Link
-                                to={`/myuhl/parcels/clientcheck/${get(
+                                to={`/email/parcels/clientcheck/${get(
                                   item,
                                   "id",
                                   null
@@ -829,7 +811,7 @@ const MyUHLParcelsContainer = () => {
                             </td>
                             <td>
                               <Link
-                                to={`/myuhl/parcels/tax/${get(
+                                to={`/email/parcels/tax/${get(
                                   item,
                                   "id",
                                   null
@@ -847,7 +829,7 @@ const MyUHLParcelsContainer = () => {
                             </td>
                             <td>
                               <Link
-                                to={`/myuhl/parcels/edit/${get(
+                                to={`/email/parcels/edit/${get(
                                   item,
                                   "id",
                                   null

@@ -141,13 +141,13 @@ const OrderBoxContainer = () => {
 
                                                 [
                                                     "Коробка",
-                                                    `Размер 1 (20 шт.) - ₩${get(dealerHeader[0], "label", 0)} `,
-                                                    `Размер 2 (20 шт.) - ₩${get(dealerHeader[1], "label", 0)}  `,
-                                                    `Размер 3 (10 шт.) - ₩${get(dealerHeader[2], "label", 0)} `,
-                                                    `Размер 4 (10 шт.) - ₩${get(dealerHeader[3], "label", 0)} `,
-                                                    `Размер 5 (10 шт.) - ₩${get(dealerHeader[4], "label", 0)} `,
-                                                    `Размер 6 (5 шт.) - ₩${get(dealerHeader[5], "label", 0)} `,
-                                                    `Воздушная подушка (5 шт.) - ₩${get(dealerHeader[6], "label", 0)}`,
+                                                    `Размер 1 (20 шт.) - ¥${get(dealerHeader[0], "label", 0)} `,
+                                                    `Размер 2 (20 шт.) - ¥${get(dealerHeader[1], "label", 0)}  `,
+                                                    `Размер 3 (10 шт.) - ¥${get(dealerHeader[2], "label", 0)} `,
+                                                    `Размер 4 (10 шт.) - ¥${get(dealerHeader[3], "label", 0)} `,
+                                                    `Размер 5 (10 шт.) - ¥${get(dealerHeader[4], "label", 0)} `,
+                                                    `Размер 6 (5 шт.) - ¥${get(dealerHeader[5], "label", 0)} `,
+                                                    `Воздушная подушка (5 шт.) - ¥${get(dealerHeader[6], "label", 0)}`,
                                                 ]
                                             }
                                         >
@@ -368,7 +368,7 @@ const OrderBoxContainer = () => {
                                                                         "price",
                                                                         ""
                                                                     )}
-                                                                    prefix={"₩"}
+                                                                    prefix={"¥"}
                                                                     thousandSeparator={
                                                                         true
                                                                     }
@@ -532,7 +532,7 @@ const OrderBoxContainer = () => {
                                                                                                         true
                                                                                                     }
                                                                                                     prefix={
-                                                                                                        "₩"
+                                                                                                        "¥"
                                                                                                     }
                                                                                                 />
                                                                                             </td>

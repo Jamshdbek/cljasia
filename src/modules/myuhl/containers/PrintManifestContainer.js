@@ -119,12 +119,12 @@ const PrintManifestContainer = () => {
                                 {
                                     id: 1,
                                     name: "Манифест",
-                                    url: "/myuhl/manifest",
+                                    url: "/email/manifest",
                                 },
                                 {
                                     id: 2,
                                     name: "Распечатать",
-                                    url: "/myuhl/manifest/print",
+                                    url: "/email/manifest/print",
                                 },
                             ]}
                         />

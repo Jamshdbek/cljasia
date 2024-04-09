@@ -141,7 +141,7 @@ const ClientCheckReceiptTable = ({ data }) => {
                         <td colSpan={6}>
                             <Flex style={{ gap: '10px' }}>
                                 <Text bold lightDark>Total</Text>
-                                <span>{get(data, 'price', '')}{" ₩"}</span>
+                                <span>{get(data, 'price', '')}{" ¥"}</span>
                                 <Text bold lightDark>Signed by</Text>
                                 <span>{get(data, 'sender', '')}</span>
                             </Flex>

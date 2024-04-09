@@ -245,7 +245,7 @@ const HomeContainer = () => {
                                                                           )
                                                                         : 0
                                                                 }
-                                                                prefix={"₩"}
+                                                                prefix={"¥"}
                                                                 decimalScale={0}
                                                             />
                                                         </Text>
@@ -364,7 +364,7 @@ const HomeContainer = () => {
                                                     "price",
                                                     0
                                                 )}
-                                                prefix={"₩"}
+                                                prefix={"¥"}
                                                 thousandSeparator={true}
                                                 decimalScale={0}
                                                 fixedDecimalScale={true}
@@ -550,7 +550,7 @@ const HomeContainer = () => {
                                                                 "price",
                                                                 0
                                                             )}
-                                                            prefix={"₩"}
+                                                            prefix={"¥"}
                                                             thousandSeparator={
                                                                 true
                                                             }

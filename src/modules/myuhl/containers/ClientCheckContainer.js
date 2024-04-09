@@ -55,13 +55,13 @@ const ClientCheckContainer = () => {
                             items={[
                                 {
                                     id: 1,
-                                    name: "Почта (MyUHL)",
-                                    url: "/myuhl/parcels",
+                                    name: "Почта ",
+                                    url: "/email/parcels",
                                 },
                                 {
                                     id: 2,
                                     name: "Клиент чек",
-                                    url: "/myuhl/parcels/clientcheck",
+                                    url: "/email/parcels/clientcheck",
                                 },
                             ]}
                         />

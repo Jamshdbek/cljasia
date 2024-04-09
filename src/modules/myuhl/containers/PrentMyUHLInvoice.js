@@ -128,13 +128,13 @@ const PrentMyUHLInvoice = () => {
                     items={[
                         {
                             id: 1,
-                            name: "Почта (MyUHL)",
-                            url: "/myuhl/parcels",
+                            name: "Почта ",
+                            url: "/email/parcels",
                         },
                         {
                             id: 2,
                             name: "Invoice",
-                            url: "/myuhl/parcels/invoice",
+                            url: "/email/parcels/invoice",
                         },
                     ]}
                 />

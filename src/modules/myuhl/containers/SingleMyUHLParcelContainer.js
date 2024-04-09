@@ -81,13 +81,13 @@ const EditMyUHLParcelContainer = () => {
                         items={[
                             {
                                 id: 1,
-                                name: "Почта (MyUHL)",
-                                url: "/myuhl/parcels",
+                                name: "Почта ",
+                                url: "/email/parcels",
                             },
                             {
                                 id: 2,
                                 name: `${get(postData, "postCode", "")}`,
-                                url: "/myuhl/parcels/edit",
+                                url: "/email/parcels/edit",
                             },
                         ]}
                     />
@@ -247,7 +247,7 @@ const EditMyUHLParcelContainer = () => {
                                         className={"mt-32 mb-32"}
                                         align="center"
                                     >
-                                        <Link to={`/myuhl/parcels/edit/${id}`}>
+                                        <Link to={`/email/parcels/edit/${id}`}>
                                             <BaseButton primary>
                                                 Редактировать
                                             </BaseButton>

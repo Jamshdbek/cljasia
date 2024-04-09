@@ -16,7 +16,7 @@ const Menu = ({ items = [] }) => {
                             </NavLink>
                         )}
                         {userCan(departments, "MYUHL") && (
-                            <NavLink to={"/myuhl"}>MyUHL</NavLink>
+                            <NavLink to={"/email"}>Почта</NavLink>
                         )}
                         {/* {isAdmin && (
                             <NavLink to={"/myems"}> MyEMS </NavLink>

@@ -46,7 +46,7 @@ const CheckMyemsContainer = () => {
                             items={[
                                 {
                                     id: 1,
-                                    name: "Почта (MyEMS)",
+                                    name: "Почта ",
                                     url: "/myems/parcels",
                                 },
                                 {
@@ -141,7 +141,7 @@ const CheckMyemsContainer = () => {
                                         </Col>
                                         <Col xs={6}>
                                             <Text bold>Postage</Text> <br />
-                                            {get(data, 'price', '') + " ₩"}
+                                            {get(data, 'price', '') + " ¥"}
                                         </Col>
                                     </Row>
                                 </Col>

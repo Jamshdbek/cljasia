@@ -78,7 +78,7 @@ const MyUhlUsersContainer = () => {
                             {
                                 id: 1,
                                 name: "Пользователи",
-                                url: "/myuhl/users",
+                                url: "/email/users",
                             },
                         ]}
                     />

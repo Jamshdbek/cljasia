@@ -1,4 +1,4 @@
-import { Loader, QRCodeGenerator, Text } from "components";
+import { Loader, QRCodeGenerator } from "components";
 import { get } from "lodash";
 import moment from "moment";
 import { dateFormatDefault } from "../../../utils/index"
@@ -13,7 +13,7 @@ const CheckReceiptTable = styled.div`
     }
     th,
     td {
-        border: 1px solid #000;
+        border: 1px solid #0000;
         padding: 12px 0 12px 5px;
         font-weight: 400;
         color: inherit;
@@ -56,7 +56,7 @@ const ClientCheckReceiptTable = ({ data, isDataFetched, companyData }) => {
                             <NumericFormat
                                 displayType="text"
                                 value={get(data, "price", 0)}
-                                prefix={"₩ "}
+                                prefix={"¥ "}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}

@@ -201,7 +201,7 @@ const MyUHLInspectionsContainer = () => {
                               <NumericFormat
                                 displayType="text"
                                 value={get(item, "price", "")}
-                                prefix={"₩ "}
+                                prefix={"¥ "}
                                 thousandSeparator={true}
                                 decimalScale={0}
                                 fixedDecimalScale={true}
@@ -233,7 +233,7 @@ const MyUHLInspectionsContainer = () => {
                                           </td>
                                           <td>
                                             <Link
-                                              to={`/myuhl/parcels/single/${get(
+                                              to={`/email/parcels/single/${get(
                                                 post,
                                                 "id",
                                                 null
@@ -261,7 +261,7 @@ const MyUHLInspectionsContainer = () => {
                                             <NumericFormat
                                               displayType="text"
                                               value={get(post, "price", "")}
-                                              prefix={"₩ "}
+                                              prefix={"¥ "}
                                               thousandSeparator={true}
                                               decimalScale={0}
                                               fixedDecimalScale={true}
@@ -269,7 +269,7 @@ const MyUHLInspectionsContainer = () => {
                                           </td>
                                           <td>
                                             <Link
-                                              to={`/myuhl/parcels/edit/${get(
+                                              to={`/email/parcels/edit/${get(
                                                 post,
                                                 "id",
                                                 null

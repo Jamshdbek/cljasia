@@ -199,7 +199,7 @@ const AddMyEMSParcelContainer = () => {
                                 items={[
                                     {
                                         id: 1,
-                                        name: "Почта (MyEMS)",
+                                        name: "Почта ",
                                         url: "/myems/parcels",
                                     },
                                     {

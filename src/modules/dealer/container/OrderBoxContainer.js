@@ -312,7 +312,7 @@ const OrderBoxContainer = () => {
                                                                         "price",
                                                                         ""
                                                                     )}
-                                                                    prefix={"₩"}
+                                                                    prefix={"¥"}
                                                                     thousandSeparator={
                                                                         true
                                                                     }
@@ -497,7 +497,7 @@ const OrderBoxContainer = () => {
                                                                                                     true
                                                                                                 }
                                                                                                 prefix={
-                                                                                                    "₩"
+                                                                                                    "¥"
                                                                                                 }
                                                                                             />
                                                                                         </td>
