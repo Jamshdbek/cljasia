@@ -667,11 +667,6 @@ const PaymentContainer = () => {
                                                           );
                                                         }
                                                       });
-                                                    // singleIsPost(get(
-                                                    //     parcel,
-                                                    //     "postId",
-                                                    //     null
-                                                    // ))
                                                   }}
                                                 >
                                                   {get(parcel, "postCode", "-")}

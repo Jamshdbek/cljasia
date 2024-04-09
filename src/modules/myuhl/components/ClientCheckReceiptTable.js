@@ -35,7 +35,7 @@ const ClientCheckReceiptTable = ({ data, isDataFetched, companyData }) => {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>UHL code</td>
+                        <td>code</td>
                         <td>{get(data, "postCode", "-")}</td>
                     </tr>
                     <tr>

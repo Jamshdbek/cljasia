@@ -15,7 +15,6 @@ const ContentParcelMyuhl = ({
     errors,
 }) => {
     const dispatch = useDispatch()
-    // console.log(get(data, "postProducts", []))
     return (
         <Row 
         style={{
@@ -31,8 +30,6 @@ const ContentParcelMyuhl = ({
             <Col xs={12}>
                 <Flex
                     justify={"space-between"}
-                    // style={{ width: "100%" }}
-                    // className={"mt-24"}
                     align={"start"}
                 >
                     <div style={{ flexBasis: "30%", position: "relative" }}>

@@ -1,4 +1,3 @@
-import AddMyEMSParcelPage from "./myems/pages/AddMyEMSParcelPage";
 
 // AUTH PAGES
 export { default as ForbiddenPage } from "./auth/pages/ForbiddenPage";
@@ -22,15 +21,6 @@ export { default as MyUHLInspectionsPage } from "./myuhl/pages/MyUHLInspectionsP
 export { default as MyUHLManifestPage } from "./myuhl/pages/MyUHLManifestPage";
 export { default as SingleMyUHLParcelPage } from "./myuhl/pages/SingleMyUHLParcelPage";
 export { default as PrentMyUHLInvoicePage } from './myuhl/pages/PrentMyUHLInvoicePage'
-
-//MyEMS DEPARTMENT PAGES
-export { default as MyEMSParcelsPage } from "./myems/pages/MyEMSParcelsPage";
-export { default as EditMyEMSParcelsPage } from "./myems/pages/EditMyEMSParcelPage";
-export { default as SingleMyEMSParcelsPage } from "./myems/pages/SingleMyEMSParcelPage"
-export { default as AddMyEMSParcelPage } from "./myems/pages/AddMyEMSParcelPage"
-export { default as NalogCheckMyemnsPage } from "./myems/pages/NalogCheckMyemsPage"
-export { default as ClientCheckMyemsPage } from './myems/pages/ClentCheckMyemsPage'
-export { default as AllCheckMyemsPage } from './myems/pages/AllCheckMyemsPage'
 
 // MANAGEMENT DEPARTMENT PAGES
 // export { default as AddCategoryAccountsPage } from "./management/pages/AddCategoryAccountsPage";

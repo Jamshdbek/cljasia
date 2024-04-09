@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { PatternFormat } from "react-number-format";
 import styled from "styled-components";
-import sthKorFlg from "assets/images/picture/south_korea.png";
+import sthKorFlg from "assets/images/picture/japan.svg";
 
 const StyledBaseInput = styled(PatternFormat)`
     background: ${({ disabled }) => (disabled ? "#E8E8E8" : "#ffffff")};
@@ -15,13 +15,10 @@ const StyledBaseInput = styled(PatternFormat)`
     margin: ${({ margin }) => margin || "0px"};
     color: #1c1c1c;
     display: inline-block;
-    /* min-width: ${({ width }) => width || "auto"}; */
     min-height: 36px;
     width: 100%;
     max-width: ${({ width }) => width || "400px"};
-
     type: ${({ type }) => type || "text"};
-
     &::placeholder {
         color: #979797;
     }
@@ -31,7 +28,6 @@ const BasePhoneInput = ({
     placeholder = "",
     disabled = false,
     handleInput = () => {
-        console.log("input");
     },
     ...props
 }) => {

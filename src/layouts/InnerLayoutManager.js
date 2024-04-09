@@ -2,12 +2,10 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import HomeInnerLayout from "modules/home/layouts/HomeInnerLayout";
 import MyUhlInnerLayout from "modules/myuhl/layouts/MyUHLInnerLayout";
-import MyemsInnerLayout from "modules/myems/layouts/MyEMSInnerLayout";
 import ManagementInnerLayout from "modules/management/layouts/ManagementInnerLayout";
 import ServiceInnerLayout from "modules/service/layouts/ServiceInnerLayout";
-import DealerInnerLayout from "modules/dealer/layouts/DealerInnerLayout";
 import SettingsInnerLayout from "modules/settings/layouts/SettingsInnerLayout";
-
+import DealerInnerLayout from "modules/dealer/layouts/DealerInnerLayout"
 class LayoutManager extends Component {
     getLayout = (pathname) => {
         if (pathname === "/") {
@@ -36,7 +34,6 @@ class LayoutManager extends Component {
         return {
             home: HomeInnerLayout,
             email: MyUhlInnerLayout,
-            myems:MyemsInnerLayout,
             management: ManagementInnerLayout,
             service: ServiceInnerLayout,
             dealer: DealerInnerLayout,

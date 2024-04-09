@@ -1,7 +1,5 @@
 import * as yup from "yup";
 
-const passwordRules = /^(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-
 const loginSchema = yup.object().shape({
     email: yup
         .string()

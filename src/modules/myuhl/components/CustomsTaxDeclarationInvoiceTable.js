@@ -153,26 +153,6 @@ const CustomsTaxDeclarationInvoiceTable = ({ data, companyData }) => {
                         </td>
                         <td style={{width:'20px'}}></td>
                     </tr>
-
-                    {/* {!isEmpty(postProducts) ? (
-                        postProducts.map((item, index) => (
-                            <tr key={get(item, index + 1)}>
-                                <td>{get(item, "productName", "-")}</td>
-                                <td>{get(item, "quantity", "-")}</td>
-                                <td>{get(item, "price", "-")}</td>
-                                <td>{get(item, "hsCode", "-")}</td>
-                                <td></td>
-                            </tr>
-                        ))
-                    ) : (
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    )} */}
                     <tr>
                         <td>
                             {postProducts.map((postProduct) => (

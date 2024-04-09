@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "assets/images/icons/logo.svg";
-import { ReactSVG } from "react-svg";
 import Title from "components/title";
 
 const LogoContainer = styled.div`
