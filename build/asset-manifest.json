@@ -1,12 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.0059ddd9.css",
-    "main.js": "/static/js/main.0fa4018b.js",
+    "main.css": "/static/css/main.01f29a4f.css",
+    "main.js": "/static/js/main.9a1349f0.js",
     "static/media/ic_person.png": "/static/media/ic_person.122ea3eede387d621818.png",
-    "static/media/logo.svg": "/static/media/logo.25dd42895a0b6460fbe7f860e8f0f0f1.svg",
-    "static/media/bg-image.jpg": "/static/media/bg-image.3e320a0372cb2d2b6012.jpg",
-    "static/media/south_korea.png": "/static/media/south_korea.31a17503266eed40c9d0.png",
-    "static/media/myuhllogo_ne.png": "/static/media/myuhllogo_ne.76ca6e5576b753e11167.png",
     "static/media/my-accout.svg": "/static/media/my-accout.eb4abab690c488588bb1bcf55c20db8f.svg",
     "static/media/equal.svg": "/static/media/equal.b27e510b12a61078b72e0821321f1263.svg",
     "static/media/userEdit.svg": "/static/media/userEdit.552cbb0648fe0010a0e27fe6ba77e18f.svg",
@@ -42,11 +38,12 @@
     "static/media/edit.svg": "/static/media/edit.2f8f097cd4c495d2af1dbdeab20f9280.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.4a5a688405753714ea0b083c1cc9796f.svg",
     "static/media/addDropDown.svg": "/static/media/addDropDown.23905dcbc0ccb61576c41e08862a04fc.svg",
-    "main.0059ddd9.css.map": "/static/css/main.0059ddd9.css.map",
-    "main.0fa4018b.js.map": "/static/js/main.0fa4018b.js.map"
+    "static/media/japan.svg": "/static/media/japan.c4b1f700c50818f752e2c42d39592a36.svg",
+    "main.01f29a4f.css.map": "/static/css/main.01f29a4f.css.map",
+    "main.9a1349f0.js.map": "/static/js/main.9a1349f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.0059ddd9.css",
-    "static/js/main.0fa4018b.js"
+    "static/css/main.01f29a4f.css",
+    "static/js/main.9a1349f0.js"
   ]
 }
