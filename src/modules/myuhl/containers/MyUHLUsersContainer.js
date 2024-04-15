@@ -29,7 +29,6 @@ import { useState } from "react";
 import MyuhlApiService from "services/apiServices/myuhl";
 import nodata_icon from "assets/images/picture/no-data.png";
 const MyUhlUsersContainer = () => {
-  const isFetched = true;
   const dispatch = useDispatch();
   const allClientsDate = useSelector((store) =>
     get(store, "myuhl.myuhlAllClientsSlice.data.myuhlAllClients.data", [])
@@ -38,6 +37,9 @@ const MyUhlUsersContainer = () => {
   const [searchFilter, setFilter] = useState({ search: "" });
   const filter = useSelector((store) =>
     get(store, "myuhl.myuhlAllClientsSlice.filter", {})
+  );
+  let isFetched = useSelector((store) =>
+    get(store, "myuhl.myuhlAllClientsSlice.data.loading", false)
   );
 
   useEffect(() => {
@@ -64,8 +66,6 @@ const MyUhlUsersContainer = () => {
   const handleClear = () => {
     dispatch(handleClearFilter());
     setFilter({ ...searchFilter, search: "" });
-    // dispatch(fetchAllClients(''))
-    // console.log("clc")
   };
 
   useEffect(() => {
@@ -124,7 +124,7 @@ const MyUhlUsersContainer = () => {
             </Row>
             <Row className={"mb-32"}>
               <Col xs={12}>
-                {isFetched ? (
+                {!isFetched ? (
                   <BaseTable
                     tableHeader={[
                       "Дата регистрации (год/месяц/день)",
@@ -166,7 +166,9 @@ const MyUhlUsersContainer = () => {
                     )}
                   </BaseTable>
                 ) : (
-                  <ContentLoader />
+                  <Flex style={{ marginTop: "15%" }} justify="center">
+                    <ContentLoader />
+                  </Flex>
                 )}
               </Col>
             </Row>
